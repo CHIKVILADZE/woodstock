@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:#e9e4d0;
+}
+
+/*------------- ABOUT US -----------*/
+.header{
+    width:100%;
+    height:180px;
+    margin-top:80px;
+    background-color:#504037;
+    color:#fff;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:18px;
+}
+.about-us {
+    width: 50%;
+    height: 500px;
+    margin-top: 80px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.text{
+   margin: 0 20px;
+}
+
+/*------------- CONTACT -----------*/
+.contacts{
+    margin-top:110px;
+    width:90%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.messagebox{
+    width:25%;
+    display:flex;
+    flex-direction:column;
+    color:#22180d;;
+    font-family:"BPG Nino Mtavruli", sans-serif;
+ 
+}
+.contact-header{
+    font-family:"BPG Nino Mtavruli", sans-serif;
+    font-size:45px;
+    color:#52371b;
+}
+.inp{
+    width:100%;
+    height:45px;
+    border:none;
+    background-color: #ffff;
+    font-size: 18px;
+    padding:25px;
+    transition: 0.5s;
+    outline: none;
+}
+.inp-optional{
+    width:100%;
+    height:250px;
+    border:none;
+    background-color: #ffff;
+    font-size: 18px;
+    padding:25px;
+    resize: none;
+    transition: 0.5s;
+    outline: none;
+}
+.inp:hover, .inp-optional:hover {
+    border: 1px solid #978d65;
+}
+.send-btn {
+    width: 200px;
+    height: 50px;
+    background-color: #b18857;
+    color: white;
+    font-size: 20px;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    margin-top: 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.send-btn:hover {
+    background-color: #504037;
+}
+.info{
+    width:25%;
+    color:#22180d;
+    font-family:"BPG Nino Mtavruli", sans-serif;
+ 
+}
+.location{
+    width:25%;
+   
+    
+}
+.video{
+    width:450px;
+    height:300px;
+    margin-top: 50px;
+    margin-left:-75px;
+}

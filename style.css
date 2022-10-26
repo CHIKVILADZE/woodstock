@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:#e9e4d0;
+}
+
+/* ///////////////////// SLIDER ///////////////////// */
+.swiper {
+    width: 100%;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ///////////////////// NAVBAR ///////////////////// */
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #978d65;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.nav-bar-div {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+.navbar ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* ///////////////////// PRODUCTS ///////////////////// */
+.products-section{
+    width:90%;
+    min-height: 650px;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    margin-top:100px;
+    display:flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+.products-section h1{
+    font-size: 45px;
+    color: #534640e0;
+}
+.products{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cards{
+    width:25%;
+    min-height:300px;
+    margin-top:50px;
+    background:#fff;
+    font-size:15px;
+    display:flex;
+    flex-direction: column;
+    margin-bottom:0px;
+}
+.cards p {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.photo{
+    width:100%;
+    height:220px;
+}
+.buy{
+    width:70%;
+    height:50px;
+    background-color:#504037;
+    color:white;
+    font-size: 18px;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    border:none;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.buy:hover{
+    background-color: #b18857;
+}
+.price{
+    text-align: center;
+    font-size:22px;
+    margin-top: 20px;
+}
+
+.click-all-products{
+    width:250px;
+    height:50px;
+    background-color: #b18857;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    border: none;
+    margin-top:50px;
+    font-size: 18px;
+    color:white;
+    text-decoration:none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.click-all-products:hover {
+    background-color:#504037;
+}
+
+/* ///////////////////// ALL PRODUCTS ///////////////////// */
+#all-products {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    margin-top: 110px;
+}
+.all-products-title {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 30px;
+}
+#all-cards{
+    width: 90%;
+    min-height: 800px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+.card {
+    width:30%;
+    min-height:450px;
+    margin-top:70px;
+    background:#fff;
+    font-size:15px;
+    display:flex;
+    flex-direction: column;
+    margin-bottom:0px;
+}
+.card p {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* ///////////////////// BUY PRODUCT ///////////////////// */
+#buy-product {
+    width: 100%;
+    height: 100vh;
+    background-color: #b9af86;
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+#buy-product .buy-product-div {
+    width: 85%;
+    height: 70%;
+    margin-top: 60px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+#buy-product .buy-product-div h1 {
+    font-size: 35px;
+}
+#buy-product .buy-product-div p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+#buy-product .buy-product-div .product-price {
+    font-size: 30px;
+}
+#buy-product .buy-product-photo {
+    width: 50%;
+    height: 100%;
+}
+#buy-product .buy-product-div .buy-product-text-div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#buy-product .buy-product-div  .buy-product-text {
+    width: 80%;
+    height: 80%;
+}
+
+#buy-product .fa-circle-xmark {
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#buy-product .fa-circle-xmark:hover {
+    color: darkred;
+}
+#buy-product .buy-product-button {
+    width: 280px;
+    height:50px;
+    background-color:#504037;
+    border: none;
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#buy-product .buy-product-button:hover{
+    background-color: #664733;
+}
+
+/* ///////////////////// FOOTER ///////////////////// */
+#footer{
+    width:100%;
+    height:300px;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    margin-top:100px;
+    background-color:#504037;
+}
+#footer .footer-div {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#footer .info{
+    margin-top:70px;
+    width:300px;
+    color:#8b857d;
+}
+#footer .contact{
+    margin-top:70px;
+    color:#8b857d;
+}
+#footer .fb{
+    color:#8b857d;
+    height:100px;
+    margin-top:70px;
+}
+#footer .footer-main-text {
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+#footer .footer-text {
+    margin-top: 20px;
+}
+#footer .footer-li {
+    margin-top: 5px;
+}
