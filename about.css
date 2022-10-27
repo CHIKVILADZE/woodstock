@@ -97,16 +97,11 @@ body {
     width:25%;
     color:#22180d;
     font-family:"BPG Nino Mtavruli", sans-serif;
- 
 }
 .location{
-    width:25%;
-   
-    
+    width:35%;  
 }
 .video{
-    width:450px;
-    height:300px;
+    width:100%;
     margin-top: 50px;
-    margin-left:-75px;
 }
