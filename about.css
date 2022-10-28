@@ -33,11 +33,12 @@ body {
 
 /*------------- CONTACT -----------*/
 .contacts{
-    margin-top:110px;
+    margin-top:140px;
     width:90%;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    
     
 }
 .messagebox{
@@ -50,8 +51,9 @@ body {
 }
 .contact-header{
     font-family:"BPG Nino Mtavruli", sans-serif;
-    font-size:45px;
+    font-size:35px;
     color:#52371b;
+    
 }
 .inp{
     width:100%;
@@ -103,5 +105,5 @@ body {
 }
 .video{
     width:100%;
-    margin-top: 50px;
+    margin-top: 75px;
 }
